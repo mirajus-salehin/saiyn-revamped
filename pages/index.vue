@@ -1,9 +1,13 @@
 <template>
-  <NavBar />
+  <main>
+    <HomepageHero />
+  </main>
 </template>
 
 <script>
+import HomepageHero from '~/components/HomepageHero.vue'
+
 export default {
-  name: 'IndexPage'
+  components: { HomepageHero }
 }
 </script>

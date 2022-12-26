@@ -4,7 +4,7 @@
       class="font-semibold whitespace-no-wrap"
       href=""
     >
-      <span class="firstlevel">Amministra</span>
+      <span>{{ title }}</span>
     </a>
     <ul
       class="
@@ -43,63 +43,22 @@
         />
       </svg>
       <li
+        v-for="menu in menus"
+        :key="menu.id"
         class="
-         mx-1
           px-4
           py-2
-          whitespace-no-wrap
           rounded-md
-          text-sm
           md:text-base
           text-black
           hover:text-green-700 hover:bg-gray-50
         "
       >
         <a
-          class="px-2 py-1"
-          href=""
+          class="px-2 py-1 whitespace-nowrap font-normal"
+          :href="menu.link"
         >
-          <span class="">Funzioni ed opzioni</span>
-        </a>
-      </li>
-      <li
-        class="
-         mx-1
-          px-4
-          py-2
-          whitespace-no-wrap
-          rounded-md
-          text-sm
-          md:text-base
-          text-black
-          hover:text-green-700 hover:bg-gray-50
-        "
-      >
-        <a
-          class="px-2 py-1"
-          href=""
-        >
-          <span class="">Gestore Pacchetti</span>
-        </a>
-      </li>
-      <li
-        class="
-         mx-1
-          px-4
-          py-2
-          whitespace-no-wrap
-          rounded-md
-          text-sm
-          md:text-base
-          text-black
-          hover:text-green-700 hover:bg-gray-50
-        "
-      >
-        <a
-          class="px-2 py-1"
-          href=""
-        >
-          <span class="">Permessi</span>
+          <span class="">{{ menu.menuTitle }}</span>
         </a>
       </li>
     </ul>
@@ -107,7 +66,18 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    title: {
+      type: String,
+      required: true
+    },
+    menus: {
+      type: Array,
+      required: true
+    }
+  }
+}
 </script>
 
 <style>
