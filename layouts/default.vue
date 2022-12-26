@@ -2,6 +2,7 @@
   <main>
     <NavBar />
     <Nuxt />
+    <FooterComp />
   </main>
 </template>
 

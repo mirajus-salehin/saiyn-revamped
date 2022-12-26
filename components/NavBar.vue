@@ -2,7 +2,7 @@
   <nav>
     <div class="flex justify-between items-center pt-6 px-10">
       <div class="w-32 px-6">
-        <img src="../assets/images/bangladesh Agricultural University.png" alt="">
+        <img src="../assets/images/bau-logo.png" alt="">
       </div>
       <div ref="menu" class="hidden md:flex justify-between space-x-4 pr-6">
         <NavbarDropdown :title=" navbaritems.researchField.title " :menus="navbaritems.researchField.menus" /> <!-- Research field -->
