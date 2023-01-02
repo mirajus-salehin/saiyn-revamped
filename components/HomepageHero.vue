@@ -14,12 +14,12 @@
             >
               Innovation in Mechanized Agriculture and Green Energy
             </h1>
-            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
+            <p class="my-6 text-lg leading-8 text-gray-600 sm:text-center">
               Welcome to the Innovation in Mechanized Agriculture and Green
               Energy (IMAGE) group of the Department of Farm Power and
               Machinery, Bangladesh Agricultural University (BAU).
             </p>
-            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">
+            <p class="my-6 text-lg leading-8 text-gray-600 sm:text-center">
               Mechanized crop production and post-harvest processing with
               sustainable clean energy solution for ensuring food security,
               forms the basis for research activities of IMAGE. Our research is
